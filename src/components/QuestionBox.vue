@@ -7,7 +7,7 @@
 
       <b-list-group>
         <b-list-group-item
-          v-for="(answer, index) in answers"
+          v-for="(answer, index) in shuffledAnswers"
           v-bind:key="index"
           v-on:click="selectAnswer(index)"
           v-bind:class="correctClass(index)"
